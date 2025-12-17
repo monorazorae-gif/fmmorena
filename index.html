@@ -9,6 +9,96 @@
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
+<!-- 🎄 ADORNOS NAVIDEÑOS TRADICIONALES – FM MORENA -->
+<style>
+  .navidad-overlay{
+    position:fixed;
+    z-index:900;
+    pointer-events:none; /* no molesta al reproductor */
+  }
+
+.guirnalda-top{
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:380px;              /* ancho de la guirnalda */
+  height:70px;
+  background:url('images/navidad/guirnalda-clasica.png') no-repeat center top;
+  background-size:contain;
+}
+  
+
+  /* Estrella de Belén */
+  .estrella-belen{
+    top:0px;
+    left:0px;
+    width:215px;
+    animation: brillo 3s infinite ease-in-out;
+  }
+
+  /* Reyes Magos (discreto) */
+  .reyes-magos{
+    bottom:40px;
+    left:20px;
+    width:200px;
+    opacity:.95;
+  }
+
+  /* Pesebre */
+  .pesebre{
+    bottom:25px;
+    right:25px;
+    width:320px;
+    background:#111;
+    border:3px solid #d4af37;
+    border-radius:14px;
+    box-shadow:0 0 25px rgba(212,175,55,.6);
+    padding:10px;
+  }
+
+  .pesebre img{
+    width:100%;
+    border-radius:10px;
+  }
+
+  .pesebre p{
+    margin:8px 0 0;
+    text-align:center;
+    font-family:Georgia, serif;
+    color:#d4af37;
+    font-style:italic;
+    font-size:14px;
+  }
+
+  @keyframes brillo{
+    0%,100%{opacity:.85}
+    50%{opacity:1; transform:scale(1.05)}
+  }
+
+  /* Responsive */
+  @media(max-width:768px){
+    .pesebre{ width:220px; }
+    .reyes-magos{ width:140px; }
+    .estrella-belen{ width:80px; }
+  }
+</style>
+
+<div class="navidad-overlay guirnalda-top"></div>
+
+<img src="images/navidad/estrella-belen.png"
+     alt="Estrella de Belén"
+     class="navidad-overlay estrella-belen">
+
+<img src="images/navidad/reyes-magos.png"
+     alt="Reyes Magos"
+     class="navidad-overlay reyes-magos">
+
+<div class="navidad-overlay pesebre">
+  <img src="images/navidad/pesebre-tradicional.png"
+       alt="Pesebre tradicional">
+  <p>Que esta navidad te traiga paz y muchas razones para sonreir ✨<br>Feliz Navidad</p>
+</div>
+<!-- 🎄 FIN ADORNOS NAVIDEÑOS -->
 <body>
     <!-- Header -->
     <header class="header">
