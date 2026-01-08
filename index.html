@@ -9,68 +9,9 @@
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- 🎄 ESTILOS NAVIDEÑOS -->
-    <style>
-      /* Elementos flotantes (Guirnalda y Estrella) */
-      .navidad-overlay{
-        position:fixed;
-        z-index:900;
-        pointer-events:none; 
-      }
-
-      /* Guirnalda Superior */
-      .guirnalda-top{
-        top:0;
-        left:50%;
-        transform:translateX(-50%);
-        width:380px;
-        height:70px;
-        background:url('images/navidad/guirnalda-clasica.png') no-repeat center top;
-        background-size:contain;
-      }
-      
-  
-      /* --- PESEBRE ESTÁTICO (CENTRADO) --- */
-      .pesebre-static {
-        position: relative; /* Ya no es fixed, fluye con la web */
-        width: 520px;
-        background: #111;
-        border: 3px solid #d4af37;
-        border-radius: 14px;
-        box-shadow: 0 0 25px rgba(212,175,55,.6);
-        padding: 10px;
-        margin: 0 auto 30px auto; /* Centrado y con espacio abajo */
-        display: block;
-        z-index: 10;
-      }
-
-      .pesebre-static img{
-        width:100%;
-        border-radius:10px;
-        display: block;
-      }
-
-      .pesebre-static p{
-        margin:8px 0 0;
-        text-align:center;
-        font-family:Georgia, serif;
-        color:#d4af37;
-        font-style:italic;
-        font-size:14px;
-      }
-
-      @keyframes brillo{
-        0%,100%{opacity:.85}
-        50%{opacity:1; transform:scale(1.05)}
-      }
-
-    </style>
+  </style>
 </head>
-
 <body>
-
-<!-- ADORNOS FLOTANTES (Solo Guirnalda y Estrella) -->
-<div class="navidad-overlay guirnalda-top"></div>
 
     <!-- Header -->
     <header class="header">
@@ -127,40 +68,37 @@
     <!-- Programación -->
     <section id="programacion" class="section" style="padding-top: 0px !important;">
          <div class="container">
-
-            <!-- 🎄 AQUÍ ESTÁ EL PESEBRE AHORA (Centrado y estático) 🎄 -->
-            <div class="pesebre-static">
-                <img src="images/2026.png" alt="Pesebre tradicional">
-                <p>Cada nuevo año es una oportunidad para renovarse, crecer y alcanzar metas. Que la determinación, la perseverancia y la fe te lleven a cumplir tus sueños más anhelados. Que el amor de quienes te rodean te impulse a seguir adelante y que la felicidad sea tu mejor aliada. ¡Feliz Año Nuevo 2026, que sea un año de logros y realizaciones! ✨<br></p>
-            </div>
-            <!-- Fin Pesebre -->
-
             <h2>Nuestra Programación</h2>
             <div class="program-grid">
                 <div class="program-card">
                     <img src="images/despertador.jpeg" alt=" " loading="lazy">
-                    <h3>06:00 - 08:30 | El Despertador</h3>
+                    <h3>06:00 - 08:30 El Despertador</h3>
                     <p>Despertate con la mejor música</p>
                 </div>
                 <div class="program-card">
                     <img src="images/mañanadetodos.jpeg" alt=" " loading="lazy">
-                    <h3>09:00 - 12:30 | La Mañana de Todos</h3>
+                    <h3>09:00 - 12:30 La Mañana de Todos</h3>
                     <p>Musica, noticias y toda la buena onda en la mañana</p>
                 </div>
                 <div class="program-card">
                     <img src="images/folkloreando.jpeg" alt=" " loading="lazy">
-                    <h3>13:00 - 14:00 | Folkloreando a lo Grande</h3>
+                    <h3>13:00 - 14:00 Folkloreando a lo Grande</h3>
                     <p>Todo el Folkore Nacional</p>
                 </div>
                 <div class="program-card">
                     <img src="images/favoritos.jpeg" alt=" " loading="lazy">
-                    <h3>14:30 - 17:00 | Los Favoritos</h3>
+                    <h3>14:30 - 17:00 Los Favoritos</h3>
                     <p>Lo mejor de la cumbia y el cuarteto</p>
                 </div>
                 <div class="program-card">
                     <img src="images/sinlimites.jpeg" alt=" " loading="lazy">
-                    <h3>17:20 - 19:00 | Sin Limites</h3>
+                    <h3>17:20 - 19:00 Sin Limites</h3>
                     <p>Musica, noticias y curiosidades de la mano de Betina</p>
+                </div>
+                <div class="program-card">
+                    <img src="images/Morena_noche.jpeg" alt=" " loading="lazy">
+                    <h3>19:20 - 21:00 Morena en la noche</h3>
+                    <p>Toda la buena onda en la noche de radio</p>
                 </div>
             </div>
         </div>
@@ -233,8 +171,6 @@
 </section>
 
 <script src="script.js"></script>
-    
-
 
 </body>
 </html>

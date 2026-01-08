@@ -71,13 +71,13 @@ input[type="range"] { flex: 1; height: 5px; border-radius: 5px; background: #333
 
 /* Quitar espacios grandes entre secciones */
 .section {
-    padding: 40px 0 !important;   /* antes tenía más arriba */
+    padding: 10px 0 !important;   /* antes tenía más arriba */
     margin: 0 !important;
 }
 
 /* La primera sección después del hero con aún menos espacio */
 #programacion {
-    padding-top: 20px !important;
+    padding-top: 10px !important;
 }
     
 .contacto-centrado {
