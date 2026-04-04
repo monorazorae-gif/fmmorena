@@ -65,44 +65,153 @@
         </div>
     </main>
 
-    <!-- Programación -->
-    <section id="programacion" class="section" style="padding-top: 0px !important;">
-         <div class="container">
-            <h2>Nuestra Programación</h2>
-            <div class="program-grid">
-                <div class="program-card">
-                    <img src="images/despertador.jpeg" alt=" " loading="lazy">
-                    <h3>06:00 - 08:30 El Despertador</h3>
-                    <p>Despertate con la mejor música</p>
-                </div>
-                <div class="program-card">
-                    <img src="images/mañanadetodos.jpeg" alt=" " loading="lazy">
-                    <h3>09:00 - 12:30 La Mañana de Todos</h3>
-                    <p>Musica, noticias y toda la buena onda en la mañana</p>
-                </div>
-                <div class="program-card">
-                    <img src="images/folkloreando.jpeg" alt=" " loading="lazy">
-                    <h3>13:00 - 14:00 Folkloreando a lo Grande</h3>
-                    <p>Todo el Folkore Nacional</p>
-                </div>
-                <div class="program-card">
-                    <img src="images/favoritos.jpeg" alt=" " loading="lazy">
-                    <h3>14:30 - 17:00 Los Favoritos</h3>
-                    <p>Lo mejor de la cumbia y el cuarteto</p>
-                </div>
-                <div class="program-card">
-                    <img src="images/sinlimites.jpeg" alt=" " loading="lazy">
-                    <h3>17:20 - 19:00 Sin Limites</h3>
-                    <p>Musica, noticias y curiosidades de la mano de Betina</p>
-                </div>
-                <div class="program-card">
-                    <img src="images/morena_noche.jpeg" alt=" " loading="lazy">
-                    <h3>19:20 - 21:00 Morena en la noche</h3>
-                    <p>Toda la buena onda en la noche de radio</p>
-                </div>
-            </div>
+ <!-- Programación -->
+<section id="programacion" class="section" style="padding: 80px 20px; background: #0a0a0a;">
+    <div class="container">
+        <h2 style="text-align:center; margin-bottom: 30px; color:#fff;">Nuestra Programación</h2>
+        
+        <!-- Pestañas -->
+        <div class="program-tabs" style="display:flex; justify-content:center; margin-bottom:40px; flex-wrap:wrap; gap:12px;">
+            <button onclick="showTab(0)" class="tab-btn active" id="tab0">Programación Habitual</button>
+            <button onclick="showTab(1)" class="tab-btn" id="tab1">VIVO por FM Morena</button>
+            <button onclick="showTab(2)" class="tab-btn" id="tab2">Vista Semanal</button>
         </div>
-    </section>
+
+        <!-- TAB 0: Programación Habitual -->
+        <div id="tab-content-0" class="tab-content">
+            <div class="program-grid">
+    <div class="program-card" onclick="showProgramModal(0)">
+        <img src="images/despertador.jpeg" alt="El Despertador" loading="lazy">
+        <h3>06:00 - 08:00</h3>
+        <h4>El Despertador</h4>
+        <p>De lunes a viernes Con Nicky Mamaní</p>
+    </div>
+    <div class="program-card" onclick="showProgramModal(1)">
+        <img src="images/mañanadetodos.jpeg" alt="La Mañana de Todos" loading="lazy">
+        <h3>09:00 - 12:30</h3>
+        <h4>La Mañana de Todos</h4>
+        <p>De lunes a viernes Con Carlos Melick Mattar</p>
+    </div>
+    <div class="program-card" onclick="showProgramModal(2)">
+        <img src="images/folkloreando.jpeg" alt="Folkloreando" loading="lazy">
+        <h3>13:00 - 14:00</h3>
+        <h4>Folkloreando a lo Grande</h4>
+        <p>De lunes a viernes Con Patricio González</p>
+    </div>
+    <div class="program-card" onclick="showProgramModal(3)">
+        <img src="images/favoritos.jpeg" alt="Los Favoritos" loading="lazy">
+        <h3>14:00 - 17:00</h3>
+        <h4>Los Favoritos de la Tarde</h4>
+        <p>De lunes a viernes Con Juan Rolando Chaile</p>
+    </div>
+    <div class="program-card" onclick="showProgramModal(4)">
+        <img src="images/sinlimites.jpeg" alt="Sin Límite" loading="lazy">
+        <h3>17:00 - 19:00</h3>
+        <h4>Sin Límite</h4>
+        <p>De lunes a viernes Con Tatiana Vacaflor</p>
+    </div>
+    <div class="program-card" onclick="showProgramModal(5)">
+        <img src="images/eureka2.jpg" alt="Eureka" loading="lazy">
+        <h3>19:00 - 21:00</h3>
+        <h4>Eureka, uma idea diferente</h4>
+        <p>De lunes a Miercoles con Andrea Cruz</p>
+    </div>
+     <div class="program-card" onclick="showProgramModal(6)">
+        <img src="images/noche100.jpeg" alt="las noches en la 100" loading="lazy">
+        <h3>21:00 - 23:00</h3>
+        <h4>Las Noches en la 100</h4>
+        <p>De lunes a jueves con Lirolay Geronimo</p>
+    </div>
+    <div class="program-card" onclick="showProgramModal(7)">
+        <img src="images/nostalgiamania.jpeg" alt="Nostalgiamania" loading="lazy">
+        <h3>15:00 - 19:00</h3>
+        <h4>Nostalgiamania</h4>
+        <p>Sabados con Romina Lagoria</p>
+    </div>
+    <div class="program-card" onclick="showProgramModal(8)">
+        <img src="images/tarde urbana.jpg" alt="Tarde Hurbana" loading="lazy">
+        <h3>19:00 - 21:00</h3>
+        <h4>Tarde Hurbana</h4>
+        <p>Sabados con Bettina Saso y Roberto Pastrana </p>
+    </div>
+    <div class="program-card" onclick="showProgramModal(9)">
+        <img src="images/veteranos.jpg" alt="Veteranos en accion" loading="lazy">
+        <h3>13:00 - 15:00</h3>
+        <h4>Veteranos en Accion</h4>
+        <p>Sabados con Agustin Vargas </p>
+    </div>
+    <div class="program-card" onclick="showProgramModal(10)">
+        <img src="images/buenas ondas.jpeg" alt="Buenas Ondas" loading="lazy">
+        <h3>13:00 - 15:00</h3>
+        <h4>Buenas Ondas</h4>
+        <p>Domingos con Silvia Aguirres y Luis Mena</p>
+    </div>
+    <div class="program-card" onclick="showProgramModal(11)">
+        <img src="images/alto vuelo.jpeg" alt="Folklore de alto Vuelo" loading="lazy">
+        <h3>13:00 - 15:00</h3>
+        <h4>Folklore de alto vuelo</h4>
+        <p>Domingos con Adolfo y Heber Villagran</p>
+    </div>    
+
+
+
+</div>
+        </div>
+
+        <!-- TAB 1: Hoy en FM Morena (con info extra) -->
+        <div id="tab-content-1" class="tab-content" style="display:none;">
+            <div style="text-align:center; margin-bottom:30px;">
+                <h3 id="current-date" style="color:#00ff00; font-size:1.45rem; margin-bottom:15px;"></h3>
+                
+        <!-- Bloque EN VIVO AHORA - Versión Corregida y Centrada -->
+<div id="now-playing" style="background:#111; padding:32px; border-radius:20px; max-width:820px; margin:30px auto 45px; border:3px solid #00ff00; text-align:center;">
+    <span style="color:#ff3366; font-size:1.4rem; font-weight:bold;">● EN VIVO AHORA</span>
+    
+    <div class="now-image-container">
+        <img id="now-image" src="" alt="Programa actual" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+    </div>
+    
+    <h3 id="now-title" style="margin:18px 0 10px; font-size:1.9rem; color:#fff;"></h3>
+    <p id="now-conductor" style="color:#00ff99; font-size:1.3rem; margin:8px 0 18px;"></p>
+    <p id="now-desc" style="color:#ddd; font-size:1.15rem; line-height:1.65; max-width:680px; margin:0 auto 25px;"></p>
+    
+    <div id="now-time" style="color:#888; font-size:1.05rem;"></div>
+</div>
+
+            <h3 style="text-align:center; color:#00ff00; margin:30px 0 20px;">Programación completa de hoy</h3>
+            <div class="daily-schedule" id="daily-schedule"></div>
+        </div>
+
+        <!-- TAB 2: Vista Semanal -->
+        <div id="tab-content-2" class="tab-content" style="display:none;">
+            <div id="weekly-grid"></div>
+        </div>
+    </div>
+    
+    <!-- Modal de Programa -->
+<div id="programModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:1000; align-items:center; justify-content:center;">
+    <div style="background:#111; max-width:720px; width:90%; border-radius:20px; padding:30px; position:relative; border:2px solid #00ff00;">
+        
+        <button onclick="closeModal()" style="position:absolute; top:15px; right:20px; background:none; border:none; font-size:2rem; color:#fff; cursor:pointer;">×</button>
+        
+        <div id="modal-images" style="display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap; justify-content:center;"></div>
+        
+        <h2 id="modal-title" style="color:#fff; text-align:center; margin:15px 0;"></h2>
+        <p id="modal-conductor" style="color:#00ff99; text-align:center; font-size:1.4rem; margin:10px 0;"></p>
+        
+        <div id="modal-time" style="text-align:center; color:#888; margin:10px 0 20px;"></div>
+        
+        <p id="modal-desc" style="color:#ddd; line-height:1.7; text-align:center; font-size:1.1rem;"></p>
+        
+        <div style="text-align:center; margin-top:25px;">
+            <button onclick="closeModal()" style="padding:12px 30px; background:#00ff00; color:#000; border:none; border-radius:50px; font-weight:bold; cursor:pointer;">
+                Cerrar
+            </button>
+        </div>
+    </div>
+</div>
+
+</section>
 
     <!-- Sobre Nosotros -->
     <section id="nosotros" class="section">
